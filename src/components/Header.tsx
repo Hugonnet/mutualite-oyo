@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Drawer, DrawerContent, DrawerTrigger } from "./ui/drawer";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +15,29 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const links = [
+    { name: 'S.S.I.A.D', href: '/ssiad' },
+    { name: 'E.S.A.D', href: '/esad' },
+    { name: 'TÉLÉALARME', href: '/telealarme' },
+    { name: 'S.A.P', href: '/sap' },
+    { name: 'C.S.I', href: '/csi' },
+    { name: 'CONTACT', href: '/contact' },
+  ];
+
+  const NavLinks = () => (
+    <>
+      {links.map((link) => (
+        <a
+          key={link.name}
+          href={link.href}
+          className="text-secondary hover:text-[#E3001B] transition-all duration-300 hover:scale-110"
+        >
+          {link.name}
+        </a>
+      ))}
+    </>
+  );
 
   return (
     <header className={cn(
@@ -26,24 +53,24 @@ const Header = () => {
           />
         </a>
         
-        <nav className="flex items-center space-x-6">
-          {[
-            { name: 'S.S.I.A.D', href: '/ssiad' },
-            { name: 'E.S.A.D', href: '/esad' },
-            { name: 'TÉLÉALARME', href: '/telealarme' },
-            { name: 'S.A.P', href: '/sap' },
-            { name: 'C.S.I', href: '/csi' },
-            { name: 'CONTACT', href: '/contact' },
-          ].map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-secondary hover:text-[#E3001B] transition-all duration-300 hover:scale-110"
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
+        {isMobile ? (
+          <Drawer>
+            <DrawerTrigger asChild>
+              <button className="p-2">
+                <Menu className="h-6 w-6" />
+              </button>
+            </DrawerTrigger>
+            <DrawerContent>
+              <nav className="flex flex-col items-center space-y-6 py-8">
+                <NavLinks />
+              </nav>
+            </DrawerContent>
+          </Drawer>
+        ) : (
+          <nav className="flex items-center space-x-6">
+            <NavLinks />
+          </nav>
+        )}
       </div>
     </header>
   );
