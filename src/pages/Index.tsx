@@ -68,7 +68,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
@@ -84,7 +84,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
@@ -100,7 +100,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
@@ -116,7 +116,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
@@ -132,7 +132,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
@@ -146,6 +146,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Section */}
       <section className="py-24 bg-primary">
         <div className="container mx-auto px-4">
           <motion.div
