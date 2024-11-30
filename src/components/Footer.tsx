@@ -51,7 +51,8 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Légal</h3>
             <ul className="space-y-2">
               <li><Link to="#" className="text-muted-foreground hover:text-primary">Mentions légales</Link></li>
-              <li><Link to="#" className="text-muted-foreground hover:text-primary">Politique de confidentialité</Link></li>
+              <li><Link to="#" className="text-muted-foreground hover:text-primary">Politique des cookies</Link></li>
+              <li><Link to="#" className="text-muted-foreground hover:text-primary">Plan de site</Link></li>
               <li><Link to="#" className="text-muted-foreground hover:text-primary">CGU</Link></li>
             </ul>
           </div>
