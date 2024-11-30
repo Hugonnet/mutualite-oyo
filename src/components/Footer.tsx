@@ -4,7 +4,19 @@ const Footer = () => {
   return (
     <footer className="bg-background py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          {/* Logo and Description Column */}
+          <div>
+            <img 
+              src="/lovable-uploads/0d941907-9c8b-4f3e-90b1-6e3f09bf4ef6.png" 
+              alt="Mutuelle Oyonnaxienne Logo" 
+              className="h-12 w-auto mb-4"
+            />
+            <p className="text-muted-foreground">
+              Votre mutuelle de proximité depuis plus de 50 ans
+            </p>
+          </div>
+
           {/* Services Column */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
