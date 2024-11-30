@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { ChevronRight, Shield, Heart, Phone, Stethoscope, Users, Bell, UserCheck } from "lucide-react";
 import Header from "@/components/Header";
+import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -137,14 +137,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-accent">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8">Prêt à nous rejoindre ?</h2>
-          <Button size="lg" variant="default" className="rounded-full">
-            Obtenir un devis gratuit
-            <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
+      {/* Contact Section */}
+      <section className="py-24 bg-primary">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold mb-4 text-white">Contactez-nous</h2>
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+              Notre équipe est à votre disposition pour répondre à vos questions.
+            </p>
+          </motion.div>
+          <ContactForm />
         </div>
       </section>
     </div>
