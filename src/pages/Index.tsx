@@ -2,10 +2,13 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronRight, Shield, Heart, Phone } from "lucide-react";
+import Header from "@/components/Header";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Header />
+      
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent to-background -z-10" />
