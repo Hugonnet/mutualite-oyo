@@ -31,7 +31,7 @@ const Header = () => {
         <a
           key={link.name}
           href={link.href}
-          className="text-secondary hover:text-[#E3001B] transition-all duration-300 hover:scale-110"
+          className="text-[#EA384C] hover:text-[#E3001B] transition-all duration-300 hover:scale-110"
         >
           {link.name}
         </a>
@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+      isScrolled ? "bg-[#F9F9F9] shadow-md py-2" : "bg-[#F9F9F9] py-4"
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="/" className="h-12">
