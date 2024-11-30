@@ -22,7 +22,13 @@ const Header = () => {
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center space-x-8">
-          <a href="/" className="text-2xl font-bold text-primary">Mutoyo</a>
+          <a href="/" className="h-12">
+            <img 
+              src="/lovable-uploads/0d941907-9c8b-4f3e-90b1-6e3f09bf4ef6.png" 
+              alt="Mutuelle Oyonnaxienne" 
+              className="h-full w-auto"
+            />
+          </a>
           
           <NavigationMenu>
             <NavigationMenuList>
