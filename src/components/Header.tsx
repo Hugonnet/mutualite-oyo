@@ -22,7 +22,7 @@ const Header = () => {
     { name: 'TÉLÉALARME', href: '/telealarme' },
     { name: 'S.A.P', href: '/sap' },
     { name: 'C.S.I', href: '/csi' },
-    { name: 'CONTACT', href: '/contact' },
+    { name: 'CONTACT', href: '/#contact' },
   ];
 
   const NavLinks = () => (

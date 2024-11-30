@@ -48,6 +48,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Services Section */}
       <section className="py-24" style={{ backgroundColor: "#E9EFEC" }}>
         <div className="container mx-auto px-4">
           <motion.div
@@ -147,7 +148,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-primary">
+      <section id="contact" className="py-24 bg-primary">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
