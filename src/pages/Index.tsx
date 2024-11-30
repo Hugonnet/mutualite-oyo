@@ -18,7 +18,7 @@ const Index = () => {
             backgroundImage: "url('/lovable-uploads/8db4dc3a-69f0-4ace-b1fd-5cfd14bd81c9.png')",
           }} 
         />
-        <div className="absolute inset-0 bg-black/60" /> {/* Overlay sombre pour la lisibilité */}
+        <div className="absolute inset-0 bg-black/80" /> {/* Overlay sombre pour la lisibilité */}
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
