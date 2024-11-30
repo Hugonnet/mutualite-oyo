@@ -65,12 +65,7 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* S.S.I.A.D */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
-            >
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2">
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
                   <Stethoscope className="w-8 h-8" />
@@ -78,15 +73,10 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2">S.S.I.A.D</h3>
                 <p className="text-muted-foreground">Service de Soins Infirmiers À Domicile</p>
               </div>
-            </motion.div>
+            </div>
 
             {/* E.S.A.D */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
-            >
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2">
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
                   <Users className="w-8 h-8" />
@@ -94,15 +84,10 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2">E.S.A.D</h3>
                 <p className="text-muted-foreground">Équipe Spécialisée Alzheimer à Domicile</p>
               </div>
-            </motion.div>
+            </div>
 
             {/* TÉLÉALARME */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
-            >
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2">
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
                   <Bell className="w-8 h-8" />
@@ -110,15 +95,10 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2">TÉLÉALARME</h3>
                 <p className="text-muted-foreground">Service d'assistance et de sécurité à distance</p>
               </div>
-            </motion.div>
+            </div>
 
             {/* S.A.P */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
-            >
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2">
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
                   <Heart className="w-8 h-8" />
@@ -126,15 +106,10 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2">S.A.P</h3>
                 <p className="text-muted-foreground">Service d'Aide à la Personne</p>
               </div>
-            </motion.div>
+            </div>
 
             {/* C.S.I */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2"
-            >
+            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2">
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 flex items-center justify-center text-primary mb-4">
                   <UserCheck className="w-8 h-8" />
@@ -142,7 +117,7 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2">C.S.I</h3>
                 <p className="text-muted-foreground">Centre de Soins Infirmiers</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
