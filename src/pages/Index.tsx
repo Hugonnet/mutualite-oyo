@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Shield, Heart, Phone, Stethoscope, Users, Bell, UserCheck } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
@@ -154,6 +155,8 @@ const Index = () => {
           <ContactForm />
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
