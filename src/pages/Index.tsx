@@ -11,33 +11,36 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{ 
             backgroundImage: "url('/lovable-uploads/8db4dc3a-69f0-4ace-b1fd-5cfd14bd81c9.png')",
           }} 
         />
-        <div className="absolute inset-0 bg-black/80" /> {/* Overlay sombre pour la lisibilité */}
+        <div className="absolute inset-0 bg-black/95" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center"
+            className="max-w-4xl mx-auto text-center"
           >
-            <span className="inline-block px-4 py-1 mb-4 text-sm font-medium rounded-full bg-primary/10 text-white">
-              Votre santé, notre priorité
+            <span className="inline-block px-4 py-1 mb-6 text-sm font-medium rounded-full bg-primary/20 text-primary">
+              Votre mutuelle de confiance à Oyonnax
             </span>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-white">
-              Mutuelle Santé
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
+              Une protection santé
               <br />
-              <span className="text-primary">Personnalisée</span>
+              adaptée à vos besoins
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Des solutions adaptées à vos besoins avec une protection optimale pour vous et votre famille.
+            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Depuis plus de 50 ans, nous accompagnons nos adhérents avec des solutions personnalisées et un service de proximité.
             </p>
-            <Button size="lg" className="rounded-full">
+            <Button 
+              size="lg" 
+              className="rounded-full bg-primary hover:bg-primary/90"
+            >
               Découvrir nos offres
               <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
@@ -45,7 +48,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="py-24" style={{ backgroundColor: "#E9EFEC" }}>
         <div className="container mx-auto px-4">
           <motion.div
@@ -144,7 +146,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-24 bg-primary">
         <div className="container mx-auto px-4">
           <motion.div
