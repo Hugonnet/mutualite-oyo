@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Shield, Heart, Phone, Stethoscope, Users, Bell, UserCheck } from "lucide-react";
+import { ChevronRight, Heart, Bell, UserCheck, Users, Stethoscope } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
@@ -15,10 +15,11 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{ 
-            backgroundImage: "url('/lovable-uploads/732cbcf9-0ce9-444a-87d0-72a9e0cb829b.png')",
+            backgroundImage: "url('/lovable-uploads/ea229b57-ec57-4a23-b9ce-4fbc56b80606.png')",
           }} 
         />
         <div className="absolute inset-0 bg-black/60" />
+        
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
