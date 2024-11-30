@@ -12,23 +12,29 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-accent to-background -z-10" />
-        <div className="container mx-auto px-4">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+          style={{ 
+            backgroundImage: "url('/lovable-uploads/8db4dc3a-69f0-4ace-b1fd-5cfd14bd81c9.png')",
+          }} 
+        />
+        <div className="absolute inset-0 bg-black/40" /> {/* Overlay sombre pour la lisibilité */}
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <span className="inline-block px-4 py-1 mb-4 text-sm font-medium rounded-full bg-primary/10 text-primary">
+            <span className="inline-block px-4 py-1 mb-4 text-sm font-medium rounded-full bg-primary/10 text-white">
               Votre santé, notre priorité
             </span>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-white">
               Mutuelle Santé
               <br />
               <span className="text-primary">Personnalisée</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Des solutions adaptées à vos besoins avec une protection optimale pour vous et votre famille.
             </p>
             <Button size="lg" className="rounded-full">
