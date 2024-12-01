@@ -57,7 +57,7 @@ const Header = () => {
           <Drawer>
             <DrawerTrigger asChild>
               <button className="p-2">
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6 text-[#8CA892]" />
               </button>
             </DrawerTrigger>
             <DrawerContent>
