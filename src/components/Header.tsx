@@ -1,18 +1,12 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerTrigger } from "./ui/drawer";
-import { useNavigate } from "react-router-dom";
-import { supabase } from "@/integrations/supabase/client";
-import { useSession } from "@supabase/auth-helpers-react";
-import { Button } from "./ui/button";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useIsMobile();
-  const navigate = useNavigate();
-  const session = useSession();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,11 +15,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleLogout = async () => {
-    await supabase.auth.signOut();
-    navigate("/login");
-  };
 
   const links = [
     { name: 'S.S.I.A.D', href: '/ssiad' },
@@ -47,23 +36,6 @@ const Header = () => {
           {link.name}
         </a>
       ))}
-      {session ? (
-        <Button 
-          onClick={handleLogout}
-          variant="outline"
-          className="text-[#4A7B63] hover:text-[#E3001B]"
-        >
-          Déconnexion
-        </Button>
-      ) : (
-        <Button 
-          onClick={() => navigate("/login")}
-          variant="outline"
-          className="text-[#4A7B63] hover:text-[#E3001B]"
-        >
-          Connexion
-        </Button>
-      )}
     </>
   );
 
