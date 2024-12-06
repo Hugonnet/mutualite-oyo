@@ -6,10 +6,10 @@ export const SAPHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80')",
+          backgroundImage: "url('/lovable-uploads/9979c396-0fe0-4598-b934-75e830e99424.png')",
         }} 
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/50" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
