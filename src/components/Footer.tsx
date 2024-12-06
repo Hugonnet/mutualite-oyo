@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -33,21 +34,29 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-muted-foreground">1 rue du Marché</li>
-              <li className="text-muted-foreground">01100 Oyonnax</li>
+              <li className="text-muted-foreground flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                1 rue du Marché
+              </li>
+              <li className="text-muted-foreground flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                01100 Oyonnax
+              </li>
               <li>
                 <a 
                   href="mailto:contact@mutuelleoyonnaxienne.com" 
-                  className="text-muted-foreground hover:text-primary"
+                  className="text-muted-foreground hover:text-primary flex items-center gap-2"
                 >
+                  <Mail className="h-4 w-4" />
                   contact@mutuelleoyonnaxienne.com
                 </a>
               </li>
               <li>
                 <a 
                   href="tel:0474778419" 
-                  className="text-muted-foreground hover:text-primary"
+                  className="text-muted-foreground hover:text-primary flex items-center gap-2"
                 >
+                  <Phone className="h-4 w-4" />
                   04 74 77 84 19
                 </a>
               </li>
