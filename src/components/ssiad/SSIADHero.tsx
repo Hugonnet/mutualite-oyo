@@ -6,7 +6,7 @@ export const SSIADHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80')",
         }} 
       />
       <div className="absolute inset-0 bg-black/60" />

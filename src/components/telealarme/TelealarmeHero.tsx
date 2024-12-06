@@ -6,7 +6,7 @@ export const TelealarmeHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80')",
         }} 
       />
       <div className="absolute inset-0 bg-black/60" />
