@@ -6,7 +6,7 @@ export const CSIHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/ea229b57-ec57-4a23-b9ce-4fbc56b80606.png')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80')",
         }} 
       />
       <div className="absolute inset-0 bg-black/60" />
