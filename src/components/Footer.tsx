@@ -43,6 +43,14 @@ const Footer = () => {
                   contact@mutuelleoyonnaxienne.com
                 </a>
               </li>
+              <li>
+                <a 
+                  href="tel:0474778419" 
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  04 74 77 84 19
+                </a>
+              </li>
             </ul>
           </div>
 
