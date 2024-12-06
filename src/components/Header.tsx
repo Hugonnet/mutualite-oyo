@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -28,13 +29,13 @@ const Header = () => {
   const NavLinks = () => (
     <>
       {links.map((link) => (
-        <a
+        <Link
           key={link.name}
-          href={link.href}
+          to={link.href}
           className="text-[#4A7B63] hover:text-[#E3001B] transition-all duration-300 hover:scale-110"
         >
           {link.name}
-        </a>
+        </Link>
       ))}
     </>
   );
@@ -45,13 +46,13 @@ const Header = () => {
       isScrolled ? "bg-[#F9F9F9] shadow-md py-2" : "bg-[#F9F9F9] py-4"
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="/" className="h-12">
+        <Link to="/" className="h-12">
           <img 
             src="/lovable-uploads/0d941907-9c8b-4f3e-90b1-6e3f09bf4ef6.png" 
             alt="Mutuelle Oyonnaxienne" 
             className="h-full w-auto"
           />
-        </a>
+        </Link>
         
         {isMobile ? (
           <Drawer>
