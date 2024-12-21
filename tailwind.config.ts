@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontSize: {
+        '6xl': ['3.5rem', {
+          lineHeight: '1.5',
+        }],
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
