@@ -1,14 +1,16 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SAPHero } from "@/components/sap/SAPHero";
-import { SAPContent } from "@/components/sap/SAPContent";
+import { SAPServices } from "@/components/sap/SAPServices";
+import { SAPInfo } from "@/components/sap/SAPInfo";
 
 const SAP = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <SAPHero />
-      <SAPContent />
+      <SAPServices />
+      <SAPInfo />
       <Footer />
     </div>
   );
