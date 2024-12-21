@@ -11,10 +11,11 @@ export const ESADContent = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-accent rounded-2xl p-8"
+            className="rounded-2xl p-8"
+            style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <HelpCircle className="w-6 h-6 text-[#f596c7]" />
+              <HelpCircle className="w-6 h-6 text-[#fe9849]" />
               <h3 className="text-xl font-semibold">Pourquoi ?</h3>
             </div>
             <p className="text-muted-foreground">
@@ -27,10 +28,11 @@ export const ESADContent = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-accent rounded-2xl p-8"
+            className="rounded-2xl p-8"
+            style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <UserCheck className="w-6 h-6 text-[#f596c7]" />
+              <UserCheck className="w-6 h-6 text-[#fe9849]" />
               <h3 className="text-xl font-semibold">Par qui ?</h3>
             </div>
             <ul className="text-muted-foreground space-y-2">
@@ -45,10 +47,11 @@ export const ESADContent = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-accent rounded-2xl p-8"
+            className="rounded-2xl p-8"
+            style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <ClipboardCheck className="w-6 h-6 text-[#f596c7]" />
+              <ClipboardCheck className="w-6 h-6 text-[#fe9849]" />
               <h3 className="text-xl font-semibold">Comment ?</h3>
             </div>
             <p className="text-muted-foreground">
@@ -61,10 +64,11 @@ export const ESADContent = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-accent rounded-2xl p-8"
+            className="rounded-2xl p-8"
+            style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <BadgeEuro className="w-6 h-6 text-[#f596c7]" />
+              <BadgeEuro className="w-6 h-6 text-[#fe9849]" />
               <h3 className="text-xl font-semibold">Aides financières</h3>
             </div>
             <p className="text-muted-foreground">
@@ -82,22 +86,22 @@ export const ESADContent = () => {
         >
           <h2 className="text-2xl font-bold mb-8">Services proposés</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="p-4 rounded-lg bg-accent">
+            <div className="p-4 rounded-lg" style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}>
               <p className="text-sm text-muted-foreground">Stimulation des capacités cognitives, motrices et sensorielles</p>
             </div>
-            <div className="p-4 rounded-lg bg-accent">
+            <div className="p-4 rounded-lg" style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}>
               <p className="text-sm text-muted-foreground">Réhabilitation sociale</p>
             </div>
-            <div className="p-4 rounded-lg bg-accent">
+            <div className="p-4 rounded-lg" style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}>
               <p className="text-sm text-muted-foreground">Prévention des risques</p>
             </div>
-            <div className="p-4 rounded-lg bg-accent">
+            <div className="p-4 rounded-lg" style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}>
               <p className="text-sm text-muted-foreground">Soutien et conseils aux aidants</p>
             </div>
-            <div className="p-4 rounded-lg bg-accent">
+            <div className="p-4 rounded-lg" style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}>
               <p className="text-sm text-muted-foreground">Aménagement du logement</p>
             </div>
-            <div className="p-4 rounded-lg bg-accent">
+            <div className="p-4 rounded-lg" style={{ backgroundColor: "rgba(254, 152, 73, 0.1)" }}>
               <p className="text-sm text-muted-foreground">Relai avec les partenaires</p>
             </div>
           </div>

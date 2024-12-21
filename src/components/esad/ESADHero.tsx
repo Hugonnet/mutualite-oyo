@@ -9,7 +9,7 @@ export const ESADHero = () => {
           backgroundImage: "url('/lovable-uploads/54856a56-0cfc-4d02-b8cd-e872c6cce609.png')",
         }} 
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(254, 152, 73, 0.8)" }} />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
