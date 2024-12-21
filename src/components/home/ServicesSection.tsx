@@ -16,10 +16,10 @@ const ServicesSection = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Découvrez nos solutions de soins et d'accompagnement à domicile
           </p>
-          <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base text-muted-foreground md:text-justify mx-auto leading-relaxed">
             Depuis 1943, la Mutualité Oyonnaxienne s'engage auprès des habitants d'Oyonnax et de sa région pour offrir des services de santé et d'accompagnement de qualité. Notre mission est de permettre à chacun de vivre chez soi en toute sérénité, entouré de professionnels qualifiés et bienveillants.
           </p>
-          <p className="text-base text-muted-foreground max-w-4xl mx-auto mt-4 leading-relaxed">
+          <p className="text-base text-muted-foreground md:text-justify mx-auto mt-4 leading-relaxed">
             Forte de son expérience et de son ancrage local, notre équipe pluridisciplinaire propose des solutions adaptées à chaque situation : soins infirmiers, accompagnement Alzheimer, aide à domicile, téléassistance et centre de soins. Nous plaçons l'humain au cœur de nos préoccupations, avec une approche personnalisée et un suivi régulier de nos bénéficiaires.
           </p>
         </motion.div>
