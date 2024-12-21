@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import KeyFigure from "./KeyFigure";
 
 const KeyFiguresSection = () => {
   const [counts, setCounts] = useState({
@@ -63,45 +64,10 @@ const KeyFiguresSection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-center"
-          >
-            <div className="text-6xl font-bold text-white mb-2">{counts.years}</div>
-            <p className="text-white/90">années d'expérience</p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center"
-          >
-            <div className="text-6xl font-bold text-white mb-2">{counts.beneficiaries}</div>
-            <p className="text-white/90">bénéficiaires</p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-center"
-          >
-            <div className="text-6xl font-bold text-white mb-2">{counts.employees}</div>
-            <p className="text-white/90">salariés</p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-center"
-          >
-            <div className="text-6xl font-bold text-white mb-2">{counts.satisfaction}%</div>
-            <p className="text-white/90">de satisfaction</p>
-          </motion.div>
+          <KeyFigure value={counts.years} label="années d'expérience" delay={0.2} />
+          <KeyFigure value={counts.beneficiaries} label="bénéficiaires" delay={0.4} />
+          <KeyFigure value={counts.employees} label="salariés" delay={0.6} />
+          <KeyFigure value={counts.satisfaction} label="de satisfaction" delay={0.8} />
         </div>
       </div>
     </section>
