@@ -11,7 +11,7 @@ export const SAPServices = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <h2 className="text-3xl font-bold mb-6 text-secondary">Nos services</h2>
+          <h2 className="text-3xl font-bold mb-6 text-secondary">Nos prestations</h2>
           <p className="text-lg text-muted-foreground">
             Le SAP propose des prestations d'aide à domicile pour vous accompagner dans votre vie quotidienne et maintenir votre autonomie.
           </p>

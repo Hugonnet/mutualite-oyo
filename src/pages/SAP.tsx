@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SAPHero } from "@/components/sap/SAPHero";
 import { SAPServices } from "@/components/sap/SAPServices";
-import { SAPInfo } from "@/components/sap/SAPInfo";
+import { SAPContent } from "@/components/sap/SAPContent";
 
 const SAP = () => {
   return (
@@ -10,7 +10,7 @@ const SAP = () => {
       <Header />
       <SAPHero />
       <SAPServices />
-      <SAPInfo />
+      <SAPContent />
       <Footer />
     </div>
   );
