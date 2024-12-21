@@ -1,0 +1,59 @@
+import { motion } from "framer-motion";
+import { Heart, Users, Clock, Shield } from "lucide-react";
+
+export const SSIADCare = () => {
+  return (
+    <div className="py-16 bg-[#f596c7]/5">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center mb-12"
+        >
+          <h2 className="text-3xl font-bold mb-6">Nos soins</h2>
+          <p className="text-lg text-muted-foreground">
+            Une équipe professionnelle à votre service pour des soins personnalisés
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              icon: Heart,
+              title: "Soins d'hygiène",
+              description: "Toilette, habillage, changes"
+            },
+            {
+              icon: Users,
+              title: "Soins relationnels",
+              description: "Écoute, soutien, accompagnement"
+            },
+            {
+              icon: Clock,
+              title: "Soins techniques",
+              description: "Pansements, injections, prélèvements"
+            },
+            {
+              icon: Shield,
+              title: "Prévention",
+              description: "Surveillance, éducation, conseils"
+            }
+          ].map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-white p-6 rounded-2xl shadow-sm"
+            >
+              <service.icon className="w-12 h-12 text-[#f596c7] mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-center">{service.title}</h3>
+              <p className="text-muted-foreground text-center">{service.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
