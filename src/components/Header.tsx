@@ -38,32 +38,38 @@ const Header = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8 font-montserrat">
-            <Link to="/ssiad" className="hover:text-primary transition-colors">
-              SSIAD
+            <Link to="/" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              ACCUEIL
             </Link>
-            <Link to="/esad" className="hover:text-primary transition-colors">
-              ESAD
+            <Link to="/ssiad" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              S.S.I.A.D
             </Link>
-            <Link to="/telealarme" className="hover:text-primary transition-colors">
-              Téléalarme
+            <Link to="/esad" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              E.S.A.D
             </Link>
-            <Link to="/sap" className="hover:text-primary transition-colors">
-              SAP
+            <Link to="/sap" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              S.A.P
             </Link>
-            <Link to="/csi" className="hover:text-primary transition-colors">
-              CSI
+            <Link to="/adj" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              A.D.J
+            </Link>
+            <Link to="/telealarme" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              TÉLÉALARME
+            </Link>
+            <Link to="/mediation-animale" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+              MÉD. ANIMALE
             </Link>
             {isHomePage ? (
               <a
                 href="#contact"
                 onClick={handleContactClick}
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
               >
-                Contact
+                CONTACT
               </a>
             ) : (
-              <Link to="/#contact" className="hover:text-primary transition-colors">
-                Contact
+              <Link to="/#contact" className="hover:text-primary hover:opacity-80 hover:underline transition-all">
+                CONTACT
               </Link>
             )}
           </div>
@@ -76,39 +82,53 @@ const Header = () => {
           >
             <div className="flex flex-col space-y-4 p-4 font-montserrat">
               <Link
-                to="/ssiad"
-                className="hover:text-primary transition-colors"
+                to="/"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                SSIAD
+                ACCUEIL
+              </Link>
+              <Link
+                to="/ssiad"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
+                onClick={() => setIsOpen(false)}
+              >
+                S.S.I.A.D
               </Link>
               <Link
                 to="/esad"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                ESAD
-              </Link>
-              <Link
-                to="/telealarme"
-                className="hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Téléalarme
+                E.S.A.D
               </Link>
               <Link
                 to="/sap"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                SAP
+                S.A.P
               </Link>
               <Link
-                to="/csi"
-                className="hover:text-primary transition-colors"
+                to="/adj"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                CSI
+                A.D.J
+              </Link>
+              <Link
+                to="/telealarme"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
+                onClick={() => setIsOpen(false)}
+              >
+                TÉLÉALARME
+              </Link>
+              <Link
+                to="/mediation-animale"
+                className="hover:text-primary hover:opacity-80 hover:underline transition-all"
+                onClick={() => setIsOpen(false)}
+              >
+                MÉD. ANIMALE
               </Link>
               {isHomePage ? (
                 <a
@@ -117,17 +137,17 @@ const Header = () => {
                     handleContactClick(e);
                     setIsOpen(false);
                   }}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary hover:opacity-80 hover:underline transition-all"
                 >
-                  Contact
+                  CONTACT
                 </a>
               ) : (
                 <Link
                   to="/#contact"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary hover:opacity-80 hover:underline transition-all"
                   onClick={() => setIsOpen(false)}
                 >
-                  Contact
+                  CONTACT
                 </Link>
               )}
             </div>
