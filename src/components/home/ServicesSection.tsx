@@ -24,81 +24,99 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* S.S.I.A.D */}
-          <Link to="/ssiad" className="block">
-            <div className="rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: "#f596c7" }}>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center text-white mb-4">
-                  <Stethoscope className="w-8 h-8" />
+          <Link to="/ssiad" className="group">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="h-2 w-full" style={{ backgroundColor: "#f596c7" }} />
+              <div className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
+                    <Stethoscope className="w-8 h-8 text-[#f596c7]" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-secondary">S.S.I.A.D</h3>
+                  <p className="text-muted-foreground">Service de Soins Infirmiers À Domicile</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">S.S.I.A.D</h3>
-                <p className="text-white/90">Service de Soins Infirmiers À Domicile</p>
               </div>
             </div>
           </Link>
 
           {/* E.S.A.D */}
-          <Link to="/esad" className="block">
-            <div className="rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: "#fe9849" }}>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center text-white mb-4">
-                  <Users className="w-8 h-8" />
+          <Link to="/esad" className="group">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="h-2 w-full" style={{ backgroundColor: "#fe9849" }} />
+              <div className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
+                    <Users className="w-8 h-8 text-[#fe9849]" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-secondary">E.S.A.D</h3>
+                  <p className="text-muted-foreground">Équipe Spécialisée Alzheimer à Domicile</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">E.S.A.D</h3>
-                <p className="text-white/90">Équipe Spécialisée Alzheimer à Domicile</p>
               </div>
             </div>
           </Link>
 
           {/* S.A.P */}
-          <Link to="/sap" className="block">
-            <div className="rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: "#FEC438" }}>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center text-white mb-4">
-                  <Heart className="w-8 h-8" />
+          <Link to="/sap" className="group">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="h-2 w-full" style={{ backgroundColor: "#FEC438" }} />
+              <div className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
+                    <Heart className="w-8 h-8 text-[#FEC438]" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-secondary">S.A.P</h3>
+                  <p className="text-muted-foreground">Service d'Aide à la Personne</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">S.A.P</h3>
-                <p className="text-white/90">Service d'Aide à la Personne</p>
               </div>
             </div>
           </Link>
 
           {/* A.D.J */}
-          <Link to="/adj" className="block">
-            <div className="rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: "#5696d0" }}>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center text-white mb-4">
-                  <Sun className="w-8 h-8" />
+          <Link to="/adj" className="group">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="h-2 w-full" style={{ backgroundColor: "#5696d0" }} />
+              <div className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
+                    <Sun className="w-8 h-8 text-[#5696d0]" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-secondary">A.D.J</h3>
+                  <p className="text-muted-foreground">Accueil de Jour</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">A.D.J</h3>
-                <p className="text-white/90">Accueil de Jour</p>
               </div>
             </div>
           </Link>
 
           {/* TÉLÉALARME */}
-          <Link to="/telealarme" className="block">
-            <div className="rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: "#e82b19" }}>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center text-white mb-4">
-                  <Bell className="w-8 h-8" />
+          <Link to="/telealarme" className="group">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="h-2 w-full" style={{ backgroundColor: "#e82b19" }} />
+              <div className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
+                    <Bell className="w-8 h-8 text-[#e82b19]" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-secondary">TÉLÉALARME</h3>
+                  <p className="text-muted-foreground">Service d'assistance et de sécurité à distance</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">TÉLÉALARME</h3>
-                <p className="text-white/90">Service d'assistance et de sécurité à distance</p>
               </div>
             </div>
           </Link>
 
           {/* Médiation animale */}
-          <Link to="/mediation-animale" className="block">
-            <div className="rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: "#697833" }}>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center text-white mb-4">
-                  <PawPrint className="w-8 h-8" />
+          <Link to="/mediation-animale" className="group">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <div className="h-2 w-full" style={{ backgroundColor: "#697833" }} />
+              <div className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
+                    <PawPrint className="w-8 h-8 text-[#697833]" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-secondary">Médiation animale</h3>
+                  <p className="text-muted-foreground">Thérapie assistée par l'animal</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">Médiation animale</h3>
-                <p className="text-white/90">Thérapie assistée par l'animal</p>
               </div>
             </div>
           </Link>
