@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 const KeyFiguresSection = () => {
   const [counts, setCounts] = useState({
@@ -9,6 +9,9 @@ const KeyFiguresSection = () => {
     satisfaction: 0,
   });
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const targetCounts = {
     years: 80,
     beneficiaries: 450,
@@ -17,7 +20,9 @@ const KeyFiguresSection = () => {
   };
 
   useEffect(() => {
-    const duration = 2000; // 2 seconds
+    if (!isInView) return;
+
+    const duration = 2000;
     const steps = 50;
     const interval = duration / steps;
 
@@ -40,10 +45,10 @@ const KeyFiguresSection = () => {
     }, interval);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [isInView]);
 
   return (
-    <section className="py-24 bg-primary">
+    <section ref={ref} className="py-24 bg-primary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

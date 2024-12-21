@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Star } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +11,16 @@ import { testimonials } from "@/data/testimonials";
 import { Card, CardContent } from "@/components/ui/card";
 
 const TestimonialsSection = () => {
+  const renderStars = (rating: number = 5) => {
+    return (
+      <div className="flex gap-1 mb-3">
+        {[...Array(rating)].map((_, i) => (
+          <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+        ))}
+      </div>
+    );
+  };
+
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -38,6 +49,7 @@ const TestimonialsSection = () => {
                 <Card className="h-full">
                   <CardContent className="p-6">
                     <blockquote className="space-y-4">
+                      {renderStars()}
                       <p className="text-muted-foreground">{testimonial.content}</p>
                       <footer>
                         <p className="font-semibold">{testimonial.name}</p>
