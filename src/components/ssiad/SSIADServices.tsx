@@ -1,74 +1,57 @@
 import { motion } from "framer-motion";
-import { Users, ClipboardCheck, Heart, HelpCircle, UserCheck, Stethoscope } from "lucide-react";
+import { Heart, Users, Clock, Shield } from "lucide-react";
 
 export const SSIADServices = () => {
   return (
-    <div className="py-16 bg-white">
+    <div className="py-16 bg-[#f596c7]/5">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {/* Pourquoi ? */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-[#f596c7]/10 rounded-2xl p-8"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <HelpCircle className="w-6 h-6 text-[#f596c7]" />
-              <h3 className="text-xl font-semibold">Pourquoi ?</h3>
-            </div>
-            <p className="text-muted-foreground">
-              Prodiguer aux patients âgés de plus de 60 ans et/ou en situation de handicap, des soins d'hygiène et de confort nécessaires au mieux-être à domicile.
-            </p>
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center mb-12"
+        >
+          <h2 className="text-3xl font-bold mb-6">Nos services</h2>
+          <p className="text-lg text-muted-foreground">
+            Des soins adaptés à vos besoins, dispensés par une équipe qualifiée
+          </p>
+        </motion.div>
 
-          {/* Par qui ? */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-[#f596c7]/10 rounded-2xl p-8"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <UserCheck className="w-6 h-6 text-[#f596c7]" />
-              <h3 className="text-xl font-semibold">Par qui ?</h3>
-            </div>
-            <p className="text-muted-foreground">
-              Une évaluation des besoins est réalisée à domicile par une infirmière coordinatrice afin d'établir un plan de soins personnalisé.
-            </p>
-          </motion.div>
-
-          {/* Comment ? */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-[#f596c7]/10 rounded-2xl p-8"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <Stethoscope className="w-6 h-6 text-[#f596c7]" />
-              <h3 className="text-xl font-semibold">Comment ?</h3>
-            </div>
-            <p className="text-muted-foreground">
-              Les interventions sont réalisées par une équipe d'aides-soignants supervisés par des infirmières coordinatrices.
-            </p>
-          </motion.div>
-
-          {/* Conditions */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-[#f596c7]/10 rounded-2xl p-8"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <ClipboardCheck className="w-6 h-6 text-[#f596c7]" />
-              <h3 className="text-xl font-semibold">Conditions</h3>
-            </div>
-            <p className="text-muted-foreground">
-              Sur prescription médicale et avec une attestation de droits du régime obligatoire à jour.
-            </p>
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              icon: Heart,
+              title: "Soins d'hygiène",
+              description: "Toilette, habillage, aide à la mobilité"
+            },
+            {
+              icon: Users,
+              title: "Accompagnement",
+              description: "Soutien psychologique et relationnel"
+            },
+            {
+              icon: Clock,
+              title: "Soins infirmiers",
+              description: "Pansements, injections, surveillance"
+            },
+            {
+              icon: Shield,
+              title: "Prévention",
+              description: "Évaluation et suivi personnalisé"
+            }
+          ].map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-white p-6 rounded-2xl shadow-sm"
+            >
+              <service.icon className="w-12 h-12 text-[#f596c7] mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-center">{service.title}</h3>
+              <p className="text-muted-foreground text-center">{service.description}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>

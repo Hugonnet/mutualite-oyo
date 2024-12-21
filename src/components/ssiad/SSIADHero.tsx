@@ -18,14 +18,11 @@ export const SSIADHero = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <span className="inline-block px-4 py-1 mb-6 text-sm font-medium rounded-full bg-white/20 text-white">
-            Service de Soins Infirmiers à Domicile
-          </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
-            S.S.I.A.D
+            Service de Soins Infirmiers À Domicile
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-            Des soins professionnels et personnalisés pour votre bien-être à domicile
+            Une équipe de professionnels à votre écoute pour des soins personnalisés
           </p>
         </motion.div>
       </div>
