@@ -1,94 +1,113 @@
 import { motion } from "framer-motion";
-import { Clock, Users, ClipboardCheck, Heart } from "lucide-react";
+import { Users, ClipboardCheck, Heart, HelpCircle, UserCheck, Stethoscope, BadgeEuro } from "lucide-react";
 
 export const SSIADContent = () => {
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        {/* Introduction */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-6 text-secondary">Notre Service de Soins Infirmiers À Domicile</h2>
-          <p className="text-lg text-muted-foreground mb-4">
-            Le SSIAD de la Mutuelle Oyonnaxienne assure, sur prescription médicale, des prestations de soins infirmiers sous la forme de soins techniques ou de soins de base et relationnels.
-          </p>
-        </motion.div>
-
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {/* Pourquoi ? */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="bg-accent rounded-2xl p-8"
           >
-            <h3 className="text-xl font-semibold mb-4">Pour qui ?</h3>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex items-start">
-                <Users className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Personnes âgées de 60 ans et plus, malades ou dépendantes</span>
-              </li>
-              <li className="flex items-start">
-                <Heart className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Personnes adultes de moins de 60 ans présentant un handicap</span>
-              </li>
-              <li className="flex items-start">
-                <ClipboardCheck className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Personnes adultes de moins de 60 ans atteintes de pathologies chroniques</span>
-              </li>
-            </ul>
+            <div className="flex items-center gap-3 mb-4">
+              <HelpCircle className="w-6 h-6 text-[#f596c7]" />
+              <h3 className="text-xl font-semibold">Pourquoi ?</h3>
+            </div>
+            <p className="text-muted-foreground">
+              Prodiguer aux patients âgés de plus de 60 ans et/ou en situation de handicap, des soins d'hygiène et de confort nécessaires au mieux-être à domicile.
+            </p>
           </motion.div>
 
+          {/* Par qui ? */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="bg-accent rounded-2xl p-8"
           >
-            <h3 className="text-xl font-semibold mb-4">Nos prestations</h3>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex items-start">
-                <Clock className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Soins d'hygiène et de confort</span>
-              </li>
-              <li className="flex items-start">
-                <Heart className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Aide à l'habillage et au déshabillage</span>
-              </li>
-              <li className="flex items-start">
-                <ClipboardCheck className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Prévention des risques (escarres, chutes, déshydratation)</span>
-              </li>
-              <li className="flex items-start">
-                <Users className="w-5 h-5 mr-2 mt-1 text-primary" />
-                <span>Surveillance de l'état général et coordination avec les autres intervenants</span>
-              </li>
-            </ul>
+            <div className="flex items-center gap-3 mb-4">
+              <UserCheck className="w-6 h-6 text-[#f596c7]" />
+              <h3 className="text-xl font-semibold">Par qui ?</h3>
+            </div>
+            <p className="text-muted-foreground">
+              Une évaluation des besoins est réalisée à domicile par une infirmière coordinatrice afin d'établir un plan de soins personnalisé.
+            </p>
+          </motion.div>
+
+          {/* Comment ? */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-accent rounded-2xl p-8"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <Stethoscope className="w-6 h-6 text-[#f596c7]" />
+              <h3 className="text-xl font-semibold">Comment ?</h3>
+            </div>
+            <p className="text-muted-foreground">
+              Les interventions sont réalisées par une équipe d'aides-soignants supervisés par des infirmières coordinatrices.
+            </p>
+          </motion.div>
+
+          {/* Conditions */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-accent rounded-2xl p-8"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <ClipboardCheck className="w-6 h-6 text-[#f596c7]" />
+              <h3 className="text-xl font-semibold">Conditions</h3>
+            </div>
+            <p className="text-muted-foreground">
+              Sur prescription médicale et avec une attestation de droits du régime obligatoire à jour.
+            </p>
           </motion.div>
         </div>
 
-        {/* Additional Information */}
+        {/* Aides financières */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto bg-muted rounded-2xl p-8"
+          className="max-w-3xl mx-auto bg-accent rounded-2xl p-8 mb-16"
         >
-          <h3 className="text-xl font-semibold mb-4 text-center">Fonctionnement du service</h3>
-          <div className="space-y-4 text-muted-foreground">
-            <p>
-              Les interventions sont assurées par une équipe d'aides-soignants(es) diplômés(es) sous la responsabilité d'infirmiers(es) coordinateurs(trices).
-            </p>
-            <p>
-              Les soins sont pris en charge à 100% par l'Assurance Maladie, sur prescription médicale.
-            </p>
-            <p>
-              Le service intervient 7 jours sur 7, y compris les jours fériés, sur les communes d'Oyonnax, Arbent, Bellignat, Dortan, Géovreisset, Groissiat, Martignat et Montréal-La-Cluse.
-            </p>
+          <div className="flex items-center gap-3 mb-4">
+            <BadgeEuro className="w-6 h-6 text-[#f596c7]" />
+            <h3 className="text-xl font-semibold">Aides financières</h3>
+          </div>
+          <p className="text-muted-foreground">
+            Prise en charge intégrale par la sécurité sociale.
+          </p>
+        </motion.div>
+
+        {/* Accompagnement */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <h2 className="text-2xl font-bold mb-8">Accompagnement aux gestes de la vie quotidienne</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-4 rounded-lg bg-accent">
+              <p className="text-sm text-muted-foreground">Encourage l'autonomie</p>
+            </div>
+            <div className="p-4 rounded-lg bg-accent">
+              <p className="text-sm text-muted-foreground">Aide à la prise de traitement</p>
+            </div>
+            <div className="p-4 rounded-lg bg-accent">
+              <p className="text-sm text-muted-foreground">Écoute et soutiens</p>
+            </div>
+            <div className="p-4 rounded-lg bg-accent">
+              <p className="text-sm text-muted-foreground">Aide au lever/coucher</p>
+            </div>
           </div>
         </motion.div>
       </div>

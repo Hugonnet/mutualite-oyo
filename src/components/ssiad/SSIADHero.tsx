@@ -6,10 +6,10 @@ export const SSIADHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80')",
+          backgroundImage: "url('/lovable-uploads/824d7ea1-a1a1-4590-972e-0115fd5d568c.png')",
         }} 
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/40" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -18,14 +18,11 @@ export const SSIADHero = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <span className="inline-block px-4 py-1 mb-6 text-sm font-medium rounded-full bg-primary/20 text-primary">
-            Service de Soins Infirmiers À Domicile
-          </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
-            S.S.I.A.D
+            Service de Soins Infirmiers à Domicile
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Un service professionnel de soins infirmiers à domicile pour préserver votre autonomie
+          <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+            Des soins professionnels et personnalisés pour votre bien-être à domicile
           </p>
         </motion.div>
       </div>
