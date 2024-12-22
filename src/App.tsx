@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Index from "./pages/Index";
 import SSIAD from "./pages/SSIAD";
 import ESAD from "./pages/ESAD";
@@ -15,24 +16,26 @@ import MediationAnimale from "./pages/MediationAnimale";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/ssiad" element={<SSIAD />} />
-          <Route path="/esad" element={<ESAD />} />
-          <Route path="/telealarme" element={<Telealarme />} />
-          <Route path="/sap" element={<SAP />} />
-          <Route path="/csi" element={<CSI />} />
-          <Route path="/adj" element={<ADJ />} />
-          <Route path="/mediation-animale" element={<MediationAnimale />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/ssiad" element={<SSIAD />} />
+            <Route path="/esad" element={<ESAD />} />
+            <Route path="/telealarme" element={<Telealarme />} />
+            <Route path="/sap" element={<SAP />} />
+            <Route path="/csi" element={<CSI />} />
+            <Route path="/adj" element={<ADJ />} />
+            <Route path="/mediation-animale" element={<MediationAnimale />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
