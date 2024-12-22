@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import ADJHero from "@/components/adj/ADJHero";
 import ADJContent from "@/components/adj/ADJContent";
 import ADJServices from "@/components/adj/ADJServices";
@@ -15,13 +15,15 @@ const ADJ = () => {
           content="Notre service d'Accueil De Jour propose un accompagnement personnalisé pour les personnes âgées en perte d'autonomie, dans un cadre chaleureux et sécurisant." 
         />
       </Helmet>
-      <Header />
-      <main>
-        <ADJHero />
-        <ADJContent />
-        <ADJServices />
-      </main>
-      <Footer />
+      <div className="min-h-screen bg-[#D3E4FD]">
+        <Header />
+        <main>
+          <ADJHero />
+          <ADJContent />
+          <ADJServices />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };

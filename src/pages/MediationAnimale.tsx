@@ -15,7 +15,7 @@ const MediationAnimale = () => {
           content="Découvrez notre service de médiation animale, une approche thérapeutique unique qui favorise le bien-être par l'interaction avec les animaux." 
         />
       </Helmet>
-      <div className="min-h-screen bg-[#fdfcfb]">
+      <div className="min-h-screen bg-[#F2FCE2]">
         <Header />
         <main>
           <MediationHero />

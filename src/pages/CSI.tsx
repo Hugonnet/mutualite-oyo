@@ -5,7 +5,7 @@ import { CSIContent } from "@/components/csi/CSIContent";
 
 const CSI = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#FDE1D3]">
       <Header />
       <CSIHero />
       <CSIContent />
