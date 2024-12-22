@@ -9,6 +9,7 @@ import ESAD from "./pages/ESAD";
 import Telealarme from "./pages/Telealarme";
 import SAP from "./pages/SAP";
 import CSI from "./pages/CSI";
+import ADJ from "./pages/ADJ";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/telealarme" element={<Telealarme />} />
           <Route path="/sap" element={<SAP />} />
           <Route path="/csi" element={<CSI />} />
+          <Route path="/adj" element={<ADJ />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
