@@ -10,6 +10,7 @@ import Telealarme from "./pages/Telealarme";
 import SAP from "./pages/SAP";
 import CSI from "./pages/CSI";
 import ADJ from "./pages/ADJ";
+import MediationAnimale from "./pages/MediationAnimale";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/sap" element={<SAP />} />
           <Route path="/csi" element={<CSI />} />
           <Route path="/adj" element={<ADJ />} />
+          <Route path="/mediation-animale" element={<MediationAnimale />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
