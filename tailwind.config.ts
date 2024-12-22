@@ -44,6 +44,14 @@ export default {
           DEFAULT: "#E8F0EA",
           foreground: "#2A2A2A",
         },
+        card: {
+          DEFAULT: "#FFFFFF",
+          foreground: "#2A2A2A",
+        },
+        page: {
+          DEFAULT: "#fdfcfb",
+          foreground: "#2A2A2A",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
