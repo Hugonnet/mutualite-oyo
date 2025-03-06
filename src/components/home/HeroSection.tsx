@@ -11,7 +11,7 @@ const HeroSection = () => {
           backgroundImage: "url('/lovable-uploads/ea229b57-ec57-4a23-b9ce-4fbc56b80606.png')",
         }} 
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/30" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
