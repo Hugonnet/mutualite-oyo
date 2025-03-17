@@ -20,7 +20,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <span className="inline-block px-4 py-1 mb-6 text-sm font-medium rounded-full bg-primary/20 text-primary">
+          <span className="inline-block px-4 py-1 mb-6 text-sm font-medium rounded-full bg-primary/10 text-primary">
             Votre mutuelle de confiance à Oyonnax
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
